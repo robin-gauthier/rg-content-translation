@@ -1,0 +1,7 @@
+#rgct-container .wp-filter { width: 99%; }
+
+#links-language { margin-right:15px; padding: 10px 0;}
+#links-language button { margin-right:10px; }
+
+#rgct-loading { background:rgba(0,0,0,0.8); display:none;; height:100%; width:100%; position:fixed; top:0; left:0; z-index:9999; }
+#rgct-loading .loader { background:url(../images/squares.gif); height:120px; width:120px; position:absolute; top:40%; right:50%; }
