@@ -1,7 +1,26 @@
-#rgct-container .wp-filter { width: 99%; }
+#rgct #links-language { margin-right:15px; padding: 10px 0;}
+#rgct #links-language button { margin-right:10px; }
 
-#links-language { margin-right:15px; padding: 10px 0;}
-#links-language button { margin-right:10px; }
+#rgct #rgct-loading { background:rgba(0,0,0,0.8); display:none;; height:100%; width:100%; position:fixed; top:0; left:0; z-index:9999; }
+#rgct #rgct-loading .loader { background:url(../images/squares.gif); height:120px; width:120px; position:absolute; top:40%; right:50%; }
 
-#rgct-loading { background:rgba(0,0,0,0.8); display:none;; height:100%; width:100%; position:fixed; top:0; left:0; z-index:9999; }
-#rgct-loading .loader { background:url(../images/squares.gif); height:120px; width:120px; position:absolute; top:40%; right:50%; }
+#rgct #notice-container { margin-top: 20px;}
+
+#rgct #links-language { background: white; padding: 20px; display:flex; }
+#rgct #links-language h2 { margin-top:0; }
+#rgct #links-language .current_lang { order: -1; }
+#rgct #links-language .current_lang .buttons-form form { float: left; margin-bottom: 20px; }
+#rgct #links-language .current_lang .buttons-form form button { line-height:30px; height: 30px; width: 250px; }
+#rgct #links-language .current_lang .search-form button { line-height:30px; height: 30px; margin-left: 5px; }
+#rgct #links-language .current_lang .search-form .input-search { height: 30px; width: 250px; }
+#rgct #links-language .other_lang { margin-left:auto; order: 10; }
+
+#rgct #fields-container { width: 100%; }
+#rgct #fields-container .translation_key { width: 20%; max-width: 200px; }
+#rgct #fields-container .translation_value { width: 80%; }
+#rgct #fields-container .translation_value textarea { height: 70px; width: 100%; }
+
+.pages .pages-container { display:flex; justify-content: center; }
+
+.pages .pages-container a { font-size: 16px; margin: 0 3px; text-decoration:none; }
+.pages .pages-container a.active-page { color: black; }

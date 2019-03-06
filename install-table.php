@@ -1,5 +1,8 @@
 <?php
 
+/*
+* Create custom table in database on install
+*/
 function rgct_install () {
     
     global $wpdb;

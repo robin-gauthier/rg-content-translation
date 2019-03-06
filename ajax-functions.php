@@ -1,4 +1,7 @@
 <?php
+/*
+* Ajax function to save current page translation form
+*/
 
 add_action( 'wp_ajax_rgct_save', 'rgct_save' );
 function rgct_save() {

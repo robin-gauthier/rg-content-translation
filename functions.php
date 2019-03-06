@@ -1,5 +1,7 @@
 <?php 
-
+/*
+* Function to use in template to call the translation service
+*/
 function rgct($key) 
 {
     global $wpdb;
@@ -33,11 +35,11 @@ if(isset($_REQUEST['action'])) {
             $translationTool->cleanDbEntries(sanitize_key($_GET['lang']));
         break;
         case 'search_db' : 
-        $rowsArray = $translationTool->searchDbEntries(sanitize_text_field($_GET['search']), sanitize_key($_GET['lang']));
+        $translations = $translationTool->searchDbEntries(sanitize_text_field($_GET['search']), sanitize_key($_GET['lang']));
         break;
         default:
     }
 } else {
-    $rowsArray = $translationTool->getFields($currentPluginLanguage);
+    $translations = $translationTool->getFields($currentPluginLanguage);
 }
 
