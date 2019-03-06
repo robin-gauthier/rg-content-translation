@@ -4,8 +4,21 @@
 
 This plugin needs a multilingual worpdress site with either Polylang or WPML to work.
 
+**How to use**
 
-**TODO**
+```bash
+#php
+<?php echo rgct('translation-key'); ?>
 
-- add pagination
-- add css style to the list
+#blade/twig
+{{ rgct('translation-key') }}
+
+```
+
+
+## Resources
+
+We highly recommend you check out these resources if you are new to Wordpress Translation:
+
+- **[WPML](https://wpml.org/documentation/)** – Official documentation
+- **[Polylang](https://polylang.wordpress.com/documentation/)** – Official documentation
