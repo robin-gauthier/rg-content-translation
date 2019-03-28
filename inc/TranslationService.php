@@ -200,7 +200,7 @@ class TranslationService
         foreach (new RecursiveIteratorIterator($di) as $filename => $file) {
             if(in_array($file->getExtension(), $accepted_files)) {
                 $contents = file_get_contents($file);
-                $pattern = "/".$this->templatePattern."\(['\"\s](.)*['\"\s]\)/";
+                $pattern = "/".$this->templatePattern."\s*\(\s*[\'\"](.*?)[\'\"]\s*\)/";
                 
                 if(preg_match_all($pattern, $contents, $matches)){            
                     foreach($matches[0] as $term) {                
