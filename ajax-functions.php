@@ -13,7 +13,7 @@ function rgct_save() {
     foreach($_POST['form'] as $input=>$value) {
         $wpdb->update(
             $wpdb->prefix.$rgct_table_name,
-            array('value'=>$value),
+            array('value'=>stripslashes($value)),
             array('id'=>$input)
         );
     }
